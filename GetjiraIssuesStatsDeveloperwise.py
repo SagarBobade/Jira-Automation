@@ -6,11 +6,12 @@ from requests.auth import HTTPBasicAuth
 import json
 import sys
 
-
+#Get the range of dates by command line input
 startDate = str(sys.argv[1])
 endDate = str(sys.argv[2])
 
 
+# Define here the list of users in dictionary format
 thisdict = {
   "User1": "57058:31a58364-e9ad-459b-a583-74e02137b84d",
   "User2": "62f0d9a6a4c09006aa0bde0",
@@ -34,6 +35,7 @@ for y,z in thisdict.items():
   totalForRetesting=0
   totalClosed=0
 
+  # Here mentioned the status of issues by whic each record should be fetch by API
   arr=[["High","Assigned"],["High","Re-test"],["High","Closed"],["High","Feedback"],["Medium","Assigned"],["Medium","Re-test"],["Medium","Closed"],["Medium","Feedback"],["Low","Assigned"],["Low","Re-test"],["Low","Closed"],["Low","Feedback"]]
 
   for x in arr:
