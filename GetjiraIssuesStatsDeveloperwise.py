@@ -40,7 +40,7 @@ for y,z in thisdict.items():
 
   for x in arr:
 
-    url = "https://phynart.atlassian.net/rest/api/3/search"
+    url = "https://org.atlassian.net/rest/api/3/search"
     auth = HTTPBasicAuth("sagaxxxxx@.com", "tg9z4Zx8Hj5MDacJB8MaB490")
     headers = {
        "Accept": "application/json"
